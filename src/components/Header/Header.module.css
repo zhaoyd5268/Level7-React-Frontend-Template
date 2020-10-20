@@ -1,0 +1,15 @@
+.Logo {
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 100%;
+    padding: 8px;
+}
+
+.Logo img {
+    height: 100%;
+}
+
+.Link {
+    color: orangered;
+    text-decoration: none;
+}
