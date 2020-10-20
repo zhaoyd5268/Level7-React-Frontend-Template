@@ -12,7 +12,13 @@ function App() {
     const searchHandler = query => {
         console.log("[App]:  Doing an AJAX call for query='" + query + "'.");
         setInput(query);
-        fetch('https://jsonplaceholder.typicode.com/posts/')
+        fetch('http://cheetah-search.us-west-2.elasticbeanstalk.com/searchResults?q=Java', {
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            method: 'GET',
+            mode: 'cors'
+        })
             .then(response => response.json())
             .then(data => {
                 const results = [];
