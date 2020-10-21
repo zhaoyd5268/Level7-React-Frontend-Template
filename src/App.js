@@ -12,7 +12,7 @@ function App() {
     const searchHandler = query => {
         console.log("[App]:  Doing an AJAX call for query='" + query + "'.");
         setInput(query);
-        fetch('http://cheetah-search.us-west-2.elasticbeanstalk.com/searchResults?q=Java', {
+        fetch('http://cheetah-search.us-west-2.elasticbeanstalk.com/searchResults?q=' + query, {
             headers: {
                 'Content-Type': 'application/json'
             },
