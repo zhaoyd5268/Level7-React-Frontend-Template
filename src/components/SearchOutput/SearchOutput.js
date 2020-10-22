@@ -21,14 +21,6 @@ const SearchOutput = (props) => {
                         link={result.link}
                     />
                 );
-                // return <li key={index}>
-                //     <a href={result.link}>{result.title}</a>
-                //     {result.authors &&
-                //         result.authors.map((author, index) => (
-                //         <p key={index}>{author}</p>
-                //         ))
-                //     }
-                // </li>
             })
     }
 
