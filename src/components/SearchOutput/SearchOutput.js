@@ -1,12 +1,13 @@
 import React from "react";
 import SearchResult from "./SearchResult/SearchResult";
+import Spinner from "../Spinner/Spinner";
 
 const SearchOutput = (props) => {
     let message = null;
     if (props.term && props.results.length !== 0) {
         message = <p>Showing {props.results.length} results</p>;
     } else if (props.term) {
-        message = <p>Searching for "{props.term}" ...</p>;
+        message = <Spinner/>;
     }
 
     let searchResults = null;
