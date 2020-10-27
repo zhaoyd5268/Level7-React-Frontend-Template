@@ -12,6 +12,7 @@ function App() {
     const searchHandler = query => {
         console.log("[App]:  Doing an AJAX call for query='" + query + "'.");
         setInput(query);
+        setOutput([]);
         fetch('http://cheetah.api.jointheleague.org/searchResults?q=' + query, {
             headers: {
                 'Content-Type': 'application/json'
