@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import SearchInput from "./components/SearchInput/SearchInput";
 import SearchOutput from "./components/SearchOutput/SearchOutput";
 import Footer from "./components/Footer/Footer";
+import {properties} from './properties';
 import classes from './App.module.css';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         console.log("[App]:  Doing an AJAX call for query='" + query + "'.");
         setInput(query);
         setOutput([]);
-        fetch('http://cheetah.api.jointheleague.org/searchResults?q=' + query, {
+        fetch(properties.endpoint + query, {
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -36,7 +37,7 @@ function App() {
         <div className={classes.App}>
             <header className={classes.AppHeader}>
                 <div>
-                    <Header className="Level 7 Cheetah Search"/>
+                    <Header/>
                 </div>
             </header>
             <main>

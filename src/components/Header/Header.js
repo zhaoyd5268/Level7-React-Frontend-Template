@@ -1,7 +1,8 @@
 import React from "react";
+import {properties} from '../../properties';
 import classes from './Header.module.css';
 
-const header = (props) => (
+const header = () => (
     <div className={classes.Logo}>
         <img src="https://www.jointheleague.org/wp-content/uploads/2017/03/JTL_Logo_Nav.png"
              alt="The League of Amazing Programmers footer"/>
@@ -13,7 +14,7 @@ const header = (props) => (
                 The LEAGUE of Amazing Programmers
             </a>
         </h2>
-        <h3>{props.className}</h3>
+        <h3>{properties.courseName}</h3>
     </div>
 );
 
