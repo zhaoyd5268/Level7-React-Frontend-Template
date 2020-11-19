@@ -1,6 +1,7 @@
 import React from "react";
 import SearchResult from "./SearchResult/SearchResult";
 import Spinner from "../Spinner/Spinner";
+import classes from './SearchOutput.module.css';
 
 const SearchOutput = (props) => {
     let message = null;
@@ -26,7 +27,7 @@ const SearchOutput = (props) => {
     }
 
     return (
-        <div>
+        <div className={classes.Result}>
             {message}
             {searchResults}
         </div>

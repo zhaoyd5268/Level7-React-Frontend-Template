@@ -1,15 +1,7 @@
-.Logo {
-    box-sizing: border-box;
-    border-radius: 5px;
-    height: 100%;
-    padding: 8px;
+.Header {
+   display: table; /* Make the container element behave like a table */
+   width: 100%; /* Set full-width to expand the whole page */
+   background: #f5f2f2;
+   border: #8a8a8a 1px solid;
 }
 
-.Logo img {
-    height: 100%;
-}
-
-.Link {
-    color: #f26522;
-    text-decoration: none;
-}

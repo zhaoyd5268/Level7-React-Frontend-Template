@@ -1,21 +1,15 @@
 import React from "react";
-import {properties} from '../../properties';
 import classes from './Header.module.css';
+import Description from "../Description/Description";
+import Logo from "../Logo/Logo";
+import CreatedBy from "../CreatedBy/CreatedBy";
 
-const header = () => (
-    <div className={classes.Logo}>
-        <img src="https://www.jointheleague.org/wp-content/uploads/2017/03/JTL_Logo_Nav.png"
-             alt="The League of Amazing Programmers footer"/>
-        <h2>
-            <a className={classes.Link}
-               href="https://www.jointheleague.org/"
-               rel="noopener noreferrer"
-               target="_blank">
-                The LEAGUE of Amazing Programmers
-            </a>
-        </h2>
-        <h3>{properties.courseName}</h3>
+const Header = () => (
+    <div className={classes.Header}>
+        <Logo/>
+        <Description/>
+        <CreatedBy/>
     </div>
 );
 
-export default header;
+export default Header;

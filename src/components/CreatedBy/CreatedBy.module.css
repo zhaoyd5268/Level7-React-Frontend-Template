@@ -1,0 +1,13 @@
+.CreatedBy {
+    box-sizing: border-box;
+    height: 100%;
+    padding: .5em;
+    float: left;
+    width: 25%;
+    background: #f5f2f2;
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
+.CreatedBy p {
+    float:left
+}

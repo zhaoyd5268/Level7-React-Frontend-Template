@@ -1,17 +1,21 @@
 .Result {
-    width: 100%;
-    padding: 16px;
-    text-align: center;
+    width: 97%;
+    padding: 1em;
+    padding-left: 5em;
+    text-align: left;
     border: 1px solid #eee;
+    border-radius: 20px;
     box-shadow: 0 2px 3px #ccc;
-    margin: 10px;
+    margin: 2em;
     box-sizing: border-box;
     cursor: pointer;
+    background-color: #ebebeb;
 }
 
 .Result:hover,
 .Result:active {
     background-color: #C0DDF5;
+    box-shadow: 2px 4px #888888;
 }
 
 .Author {
