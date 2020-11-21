@@ -21,13 +21,21 @@ function App() {
             method: 'GET',
             mode: 'cors'
         })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    const term = null;
+                    setInput(term);
+                    throw new Error("Not 2xx response")
+                } else {
+                    return response.json()
+                }
+            })
             .then(data => {
-                const results = [];
-                data.forEach(datum => {
-                    results.push(datum)
-                });
-                setOutput(results);
+                    const results = [];
+                    data.forEach(datum => {
+                        results.push(datum)
+                    });
+                    setOutput(results);
             }, (error) => {
                 console.log(error);
             });
