@@ -1,5 +1,5 @@
 import React from "react";
-import {properties} from '../../properties';
+import {properties} from '../../../properties';
 import classes from './Logo.module.css';
 import logo from './img/LeagueLogo.png';
 

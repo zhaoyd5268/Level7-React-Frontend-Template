@@ -3,6 +3,7 @@
     border-radius: 5px;
     height: 100%;
     padding: 1em;
+    padding-top: 1.25em;
     float: left;
     width: 25%;
     background: #e0e0e0;
@@ -10,8 +11,7 @@
 }
 
 .Logo img {
-    height: 35%;
-    width: 35%;
+    height: 6em;
 }
 
 .Logo h3 {
