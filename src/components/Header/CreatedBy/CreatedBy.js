@@ -9,7 +9,7 @@ const CreatedBy = () => (
             <br/>
             <br/>
             <a className={classes.Link}
-               href={properties.backendUrl}
+               href={properties.backendSwaggerUrl}
                rel="noopener noreferrer"
                target="_blank">
                 View Spring Boot API documentation
