@@ -23,9 +23,9 @@ function App() {
         })
             .then(response => {
                 if (!response.ok) {
-                    const term = null;
-                    setInput(term);
-                    throw new Error("Not 2xx response")
+                   // const term = null;
+                   // setInput(term);
+                    return response.json()
                 } else {
                     return response.json()
                 }

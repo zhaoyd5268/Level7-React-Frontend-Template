@@ -1,6 +1,6 @@
 export const properties = {
     courseName: 'Literature Searcher',
-    endpoint: 'loc.gov/books',
+    endpoint: 'http://localhost:8080/searchLocResults?q=',
     description: 'This piece of software takes in a query, or search term, and sends back an array of objects'
     +', which contain individual pieces of literature with information such as author name, link, and book title.',
     backendSwaggerUrl: 'http://localhost:8080/swagger-ui.html',
@@ -11,7 +11,7 @@ export const properties = {
 
 // It is likely that you will also need to change the object that the frontend is expecting to receive from the service.
 
-
+/*
 SearchResult.js
 
 //Change this to match the structure of your object.  Note that for cheetah search, it uses the map() function to
@@ -47,4 +47,4 @@ SearchOutput.js: 22
     species={result.species}
     numberOfLegs={result.numberOfLegs}
     link={result.link}
-/>
+/> */
